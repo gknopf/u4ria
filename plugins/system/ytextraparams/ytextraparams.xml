@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Yt Extra Params</name>
+	<author>YouTech Company</author>
+	<creationDate>28 April 2011</creationDate>
+	<copyright>Copyright (C) 2010 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.ytcvn.com</authorUrl>
+	<version>1.2</version>
+	<description>YouTech Extra Params plugin for Joomla 1.5.x, 1.6.x and 1.7</description>	
+	<files>
+		<folder plugin="ytextraparams">ytextraparams</folder>
+		<filename plugin="ytextraparams">ytextraparams.php</filename>
+	</files>
+	<languages>
+		<!--
+		<language tag="en-GB">en-GB.plg_system_ytextraparams.ini</language>
+		-->
+    </languages>
+	<params>
+		<!--
+		<param type="list" name="ytep_onlyadmin" default="1" label="Only For Admin" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="text" name="ytep_components" default="com_menus" label="For Components" description="FOR COMPONENT DESC"/>
+		<param type="text" name="ytep_tasks" default="edit" label="For Tasks" description="FOR TASK DESC"/>
+		-->
+	</params>
+</install>

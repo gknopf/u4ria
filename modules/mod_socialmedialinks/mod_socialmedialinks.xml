@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7.0"
+	client="site"
+	method="upgrade">
+	<name>Social Media Links</name>
+	<author>Techheads IT Consulting</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 Techheads IT Consulting. All rights reserved. Defualt icons provided by </copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>satechheads@yahoo.com</authorEmail>
+	<authorUrl>www.sanantoniocomputerrepair.net</authorUrl>
+	<version>2.1</version>
+	<description>MOD_LINKS_DESC</description>
+	<files>
+		<filename module="mod_socialmedialinks">mod_socialmedialinks.php</filename>
+		<filename>index.html</filename>
+		<filename>style.css</filename>
+        <folder>icons/</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_socialmedialinks.ini</language>
+	</languages>
+
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+		<field type="spacer" name="spacer199"  label="MOD_LINKS_OURINFO" />
+
+		<field type="spacer" name="spacer1" label="MOD_LINKS_SETTINGS" />
+
+	     <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+
+		<field name="size" type="text" default="32" label="Choose Icon Size" description="Choose the size of your icons (Typically between 24 and 64 pixels)." />
+			
+		<field name="align" type="radio" default="center" label="Align Icons" description="Choose to align the icons to the left to the right or in the center.">
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+				<option value="right">Right</option>
+		</field>
+		
+		<field name="effect" type="list" default="none" label="Special Effect" description="Choose which type of special effect you would like to display or choose none.">
+				<option value="none">None</option>
+				<option value="dogear">Dog Ear</option>
+				<option value="enlarge">Enlarge</option>
+				<option value="shrink">Shrink</option>
+				<option value="shiftup">Shift Up</option>
+				<option value="highlight">Highlight</option>
+				<option value="rotate">Rotate</option>
+				<option value="bullseye">Bullseye</option>
+				<option value="custom">Custom</option>
+		</field>
+
+		<field name="backcolor" type="text" default="#ffffff" label="Background color of module" description="The background color of the module in HEX (ex. #ffffff default white)."/>	
+
+		<field name="highlight" type="text" default="#fff000" label="Color to highlight your icons" description="Choose a bright color to highlight your icons in HEX (ex. #fff000 default is yellow - for highlight effect)."/>			
+
+		<field name="margin" type="text" default="2px" label="Space between icons" description="Enter the amount of space you would like between icons (Typically between 1 and 3)."/>			
+		
+		<field name="rotatedeg" type="list" default="90" label="Degrees to Rotate your icons" description="Choose the number of degrees to rotate your icons.">	
+				<option value="-90">-90</option>
+				<option value="-180">-180</option>
+				<option value="-270">-270</option>
+				<option value="90">90</option>
+				<option value="180">180</option>
+				<option value="270">270</option>
+		</field>
+
+		<field name="text" type="text" default="Follow us on" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="rsstext" type="text" default="RSS Feed" label="Hover Text for RSS Icon" description="If you are using the RSS Icon, add the text to display when you mouseover the icon. ex: 'Subscribe to our Feed' (This module does not generate a feed, it only provides an RSS icon to link to your feed)"/>
+	
+		<field name="target" type="radio" default="_blank" label="Target" description="Choose to open the link in a new browser window or the same window">
+				<option value="_blank">New Window</option>
+				<option value="_self">Same Window</option>
+		</field>
+	
+		<field name="robots" type="radio" default="1" label="Include the rel='nofollow' link attribute" description="Search Engines that support the rel='nofollow' attribute exclude these links from their ranking calculation ">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</field>
+
+		<field name="credits" type="radio" default="1" label="Support the Author?" description="This option allows you to show/hide a link back to our website.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</field>
+		
+		<field type="spacer" name="spacer2" label="MOD_SOCIALPROFILE_SETTINGS" />
+
+		<field name="ic1" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinks/icons" striptext="" />
+		<field name="url1" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ic2" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinks/icons" striptext="" />
+		<field name="url2" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ic3" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinks/icons" striptext="" />
+		<field name="url3" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

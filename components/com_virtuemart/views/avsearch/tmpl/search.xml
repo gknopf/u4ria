@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Search Advance">
+        <message><![CDATA[Advance Search Product]]></message>
+    </layout>
+    <state>
+        <name>Search Advance</name>
+        <description><![CDATA[Advance Search Product]]></description>
+    </state>
+</metadata>

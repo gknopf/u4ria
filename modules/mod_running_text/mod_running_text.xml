@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>renat running text 2.5</name>
+  <author>Roman Náhlovský</author>
+  <creationDate>01.04.2012</creationDate>
+  <copyright>Copyright (C) 2008 - 2012 Renat.sk spl s r o  All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>web@renat.sk</authorEmail>
+  <authorUrl>http://web.renat.sk</authorUrl>
+  <version>2.5.X</version>
+  <description>Modul running text fot joomla 2.5</description>
+  <files>
+    <filename module="mod_running_text">mod_running_text.php</filename>
+	<filename>index.html</filename>
+  </files>
+   <config>
+		   <fields name="params">
+		   <fieldset name="Basic"> 			
+        <field type="spacer" class="text" hr="true"/>
+		    <field name="showtext" type="textarea" cols="50" rows="30" default="http://www.instudio.in | http://www.renat.sk | http://web.renat.sk | http://uctovnictvo.renat.sk | http://www.server-renat-sk.eu | http://www.hracky-detske.sk | http://www.fotocam.sk | http://www.kvety-bb.sk | http://www.tucniaci.eu" label="Text" description="Text - Text" />
+  	    <field name="bgcolor" type="text" default="" label="Scroller background (#)" description="Scroller background(#FFFFFF)" />
+        <field name="width" type="text" default="200px" label="Width (px)" description="Width(px) scroller width - Šírka modulu" />
+        <field name="height" type="text" default="25px" label="Height (px)" description="Height(px) scroller height - Výška modulu" />
+        <field type="spacer" class="text" hr="true"/>
+        <field name="speed" type="text" default="2" label="Speed (1-10)" description="Scroller speed larger is faster 1-10" />
+        <field name="pause" type="text" default="1" label="Pause (0-1)" description="Pause scroller onMousever 0=no. 1=yes" />
+        <field name="fontsize" type="text" default="13px" label="Fontsize (px)" description="Fontsize(px)" />     
+        <field type="spacer" class="text" hr="true"/>     
+        <field type="spacer" class="text" hr="true"/>
+		    <field name="moduleclass_sfx" type="text" label="Module Class Suffix" default="" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+        <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+         <option value="1">yes</option>
+         <option value="0">not</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+        <field name="cachemode" type="hidden" default="itemid">
+         <option value="itemid"/>
+       </field>
+		   </fieldset>
+     </fields>
+	</config>
+</extension>

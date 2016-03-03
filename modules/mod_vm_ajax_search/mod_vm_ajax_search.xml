@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/module-install.dtd">
+<install type="module" version="1.5.0" method="upgrade">
+	<name>VirtueMart Ajax Search</name>
+	<author>www.wap.f11.vn</author>
+	<creationDate>20110107</creationDate>
+	<copyright>(C) Altalab</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@f11.vn</authorEmail>
+	<authorUrl>http://www.f11.vn</authorUrl>
+	<version>2.0.2</version>
+	<description><![CDATA[
+Virtuemart Ajax Search Module created by <a href="http://www.f11.vn/">f11.vn</a> team. 
+	]]>
+	</description>
+	<files>
+		<filename module="mod_vm_ajax_search">mod_vm_ajax_search.php</filename>
+		<filename module="mod_vm_ajax_search">index.html</filename>
+		<filename module="mod_vm_ajax_search">tmpl/default.php</filename>
+		<filename module="mod_vm_ajax_search">tmpl/index.html</filename>
+		<filename module="mod_vm_ajax_search">js/vmajaxsearch.js</filename>
+		<filename module="mod_vm_ajax_search">js/index.html</filename>
+		<filename module="mod_vm_ajax_search">css/mod_vm_ajax_search.css</filename>
+		<filename module="mod_vm_ajax_search">css/loadingcircle.gif</filename>
+		<filename module="mod_vm_ajax_search">css/virtuemart_extensions.png</filename>
+		<filename module="mod_vm_ajax_search">css/index.html</filename>
+		<filename module="mod_vm_ajax_search">ajax/index.php</filename>
+		<filename module="mod_vm_ajax_search">ajax/helper.php</filename>
+		<filename module="mod_vm_ajax_search">ajax/index.html</filename>
+	</files>
+	<params>
+		<param
+            name="cache"
+            type="list"
+            default="0"
+            label="Joomla Caching"
+            description="Module caching is not supperted by this extension in order for head data to load properly.">
+            <option
+                value="0">Not supported</option>
+        </param>
+		<param name="internal_caching" type="radio" default="0" label="Internal HTML caching." description="Enable this feature so this component does not slow down your database queries. Remember to delete content of cache if any of your product names or links change" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default=" ajax_srch" label="Module Class Suffix" description="Add a class to the module" />
+		<param name="pretext" type="textarea" cols="30" rows="5" default="" label="Pre-text" description="Text to appear before the search box" />
+		<param name="posttext" type="textarea" cols="30" rows="5" label="Post-text" description="Text to appear after the search box" />
+		<param name="search_page" type="text" cols="30" default="index.php?option=com_virtuemart&amp;page=shop.search" label="VM Searchpage URL (relative to domain)" description="Relative path to your Virtuemart Advanced searchpage. This is the Advanced search link." />
+		<param name="@spacer" type="spacer" default="" label="Style options" description="" />
+		<param name="include_advsearch" type="radio" default="1" label="Show link to VM Advanced Search">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="include_but" type="radio" default="1" label="Show 'Submit' button" description="Set this option to yes, if you want a button to submit the query to the VM search page.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			</param>
+		<param name="offset_top_search_result" type="text" default="20" label="Top margin of results box" description="Offset in px (no px! number only!), margin-top to move the results box down." />
+		<param name="text_box_width" type="text" default="100" label="Text box width in px" description="Text box width" />
+		<param name="min_height" type="text" default="50" label="Min-height of module" description="Minimum height of the module without the results." />
+		<param name="results_width" type="text" default="200" label="Results width in px (0 for 100%)" description="Set results width." />
+		<param name="offset_left_search_result" type="text" default="0" label="Left margin of results box" description="Offset in px (no px! + or - number only!), margin-left to get the results underneath the box" />
+		<param name="number_of_products" type="text" default="5" label="Number of products to search for." />
+		<param name="css_position" type="list" default="relative" label="CSS position of the results." >
+			<option value="relative">relative</option>
+			<option value="absolute">absolute</option>
+		</param>
+	
+		<param name="@spacer" type="spacer" default=""/>
+		
+		
+	</params>
+	<config>
+	 <fields name = "params">
+	   <fieldset name="basic">
+		<field
+            name="cache"
+            type="list"
+            default="0"
+            label="Joomla Caching"
+            description="Module caching is not supperted by this extension in order for head data to load properly.">
+            <option
+                value="0">Not supported</option>
+        </field>
+		<field name="internal_caching" type="radio" default="0" label="Internal HTML caching." description="Enable this feature so this component does not slow down your database queries. Remember to delete content of cache if any of your product names or links change" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="moduleclass_sfx" type="text" default=" ajax_srch" label="Module Class Suffix" description="Add a class to the module" />
+		<field name="pretext" type="textarea" cols="30" rows="5" default="" label="Pre-text" description="Text to appear before the search box" />
+		<field name="posttext" type="textarea" cols="30" rows="5" label="Post-text" description="Text to appear after the search box" />
+		<field name="search_page" type="text" cols="30" default="index.php?option=com_virtuemart&amp;page=shop.search" label="VM Searchpage URL (relative to domain)" description="Relative path to your Virtuemart Advanced searchpage. This is the Advanced search link." />
+		<field name="@spacer" type="spacer" default="" label="Style options" description="" />
+		<field name="include_advsearch" type="radio" default="1" label="Show link to VM Advanced Search">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="include_but" type="radio" default="1" label="Show 'Submit' button" description="Set this option to yes, if you want a button to submit the query to the VM search page.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			</field>
+		<field name="offset_top_search_result" type="text" default="20" label="Top margin of results box" description="Offset in px (no px! number only!), margin-top to move the results box down." />
+		<field name="text_box_width" type="text" default="100" label="Text box width in px" description="Text box width" />
+		<field name="min_height" type="text" default="50" label="Min-height of module" description="Minimum height of the module without the results." />
+		<field name="results_width" type="text" default="200" label="Results width in px (0 for 100%)" description="Set results width." />
+		<field name="offset_left_search_result" type="text" default="0" label="Left margin of results box" description="Offset in px (no px! + or - number only!), margin-left to get the results underneath the box" />
+		<field name="number_of_products" type="text" default="5" label="Number of products to search for." />
+		<field name="css_position" type="list" default="relative" label="CSS position of the results." >
+			<option value="relative">relative</option>
+			<option value="absolute">absolute</option>
+		</field>
+	
+		
+		
+		 </fieldset>
+	</fields>
+	</config> 
+	
+	
+</install>

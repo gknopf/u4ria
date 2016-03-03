@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset name="ypd"
+                  label=""
+        >
+                              
+                <field name="name" type="text"
+                       filter="string"
+                       label="First Name"
+                       message="First Name"
+                       required="true"
+                       size="30"
+                       class="sizeinput"
+                />
+                <field name="lastname" type="text"
+                       filter="string"
+                       label="Last Name"
+                       message="Last Name"
+                       required="true"
+                       size="30"
+                       class="sizeinput"
+                />
+
+                <field name="username" type="text"
+                       class="validate-username sizeinput"
+                       filter="username"
+                       label="COM_USERS_REGISTER_USERNAME_LABEL"
+                       message="COM_USERS_REGISTER_USERNAME_MESSAGE"
+                       required="true"
+                       size="30"
+                       validate="username"
+                />
+                <field name="gender" type="radio"
+                       default="2"
+                       label="Gender"
+                       size="1"
+                >
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                </field> 
+                <field name="year" type="list"
+                label="COM_USERS_REGISTER_BIRTH_DAY_LABEL"
+                       default="0"
+                       class="sizeinputselectbirthday"
+                       size="1"
+                >
+                        <option value="0">YEAR</option>
+                        <option value="1">Option 01</option>
+                        <option value="2">Option 02</option>
+                        <option value="3">Option 03</option>
+                </field>
+                <field name="month" type="list"
+                       default="0"
+                       label="COM_USERS_REGISTER_BIRTH_DAY_LABEL"
+                       class="sizeinputselectbirthday"
+                       size="1"
+                       onchange="resetMonthAndDayByMonth();"
+                >           
+		        <option value="0">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                </field>  
+                <field name="day" type="list"
+                       default="0"                       
+                       class="sizeinputselectbirthday"
+                       size="1"
+                >          
+		        <option value="0">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                </field>                                  
+                <field name="email1" type="email"
+                       field="id"
+                       filter="string"
+                       label="COM_USERS_REGISTER_EMAIL1_LABEL"
+                       message="COM_USERS_REGISTER_EMAIL1_MESSAGE"
+                       required="true"
+                       size="30"
+                       unique="true"
+                       validate="email"
+                       class="sizeinput"
+                />
+
+                <field name="email2" type="email"
+                       field="email1"
+                       filter="string"
+                       label="COM_USERS_REGISTER_EMAIL2_LABEL"
+                       message="COM_USERS_REGISTER_EMAIL2_MESSAGE"
+                       required="true"
+                       size="30"
+                       validate="equals"
+                       class="sizeinput"
+                />    
+                <field name="password1" type="password"
+                       autocomplete="off"
+                       class="validate-password sizeinput"
+                       field="password2"
+                       filter="raw"
+                       label="COM_USERS_REGISTER_PASSWORD1_LABEL"
+                       message="COM_USERS_REGISTER_PASSWORD1_MESSAGE"
+                       required="true"
+                       size="30"
+                       validate="equals"
+                />
+
+                <field name="password2" type="password"
+                       autocomplete="off"
+                       class="validate-password sizeinput"
+                       filter="raw"
+                       label="COM_USERS_REGISTER_PASSWORD2_LABEL"
+                       message="COM_USERS_REGISTER_PASSWORD2_MESSAGE"
+                       required="true"
+                       size="30"
+                />                       
+        </fieldset>
+        <fieldset name="com"
+                  label="Company Detail"
+        >
+                <field name="company" type="text"
+                       filter="string"
+                       label="Company Name"
+                       message="COM_USERS_REGISTER_NAME_MESSAGE"
+                       size="30"
+                       class="sizeinput"
+                />
+        </fieldset>
+        <fieldset name="yadd"
+                  label="Your Address"
+        >
+                <field name="add_line1" type="text"
+                       filter="string"
+                       label="Address Line 01"
+                       message="COM_USERS_REGISTER_NAME_MESSAGE"
+                       required="true"
+                       size="30"
+                       class="sizeinput"
+                />
+                <field name="add_line2" type="text"
+                       filter="string"
+                       label="Address Line 02"
+                       message="COM_USERS_REGISTER_NAME_MESSAGE"
+                       size="30"
+                       class="sizeinput"
+                />
+                <field name="zip_postcode" type="text"
+                       filter="string"
+                       label="Zip/Postal code"
+                       message="COM_USERS_REGISTER_NAME_MESSAGE"
+                       size="30"
+                       class="sizeinput"
+                />
+                
+                <field name="city" type="text"
+                       filter="string"
+                       label="City"
+                       message="COM_USERS_REGISTER_NAME_MESSAGE"
+                       size="30"
+                       class="sizeinput"
+                />
+                <field name="state" type="text"
+                       filter="string"
+                       label="State/Province"
+                       message="COM_USERS_REGISTER_NAME_MESSAGE"
+                       size="30"
+                       class="sizeinput"
+                />
+                <field name="country" type="sql"
+                       default="1"
+                       label="Country"
+                       class="sizeinputselect"
+                       query="SELECT 
+    #__virtuemart_countries.virtuemart_country_id as title ,              
+    #__virtuemart_countries.country_name as value
+    FROM #__virtuemart_countries" 
+    key_field="title" 
+    value_field="value"
+                >
+                </field>                        
+        </fieldset>
+        <fieldset name="cti"
+                  label="Your Contact Information"
+        >
+                <field name="phone" type="text"
+                       filter="string"
+                       label="Telephone Number"
+                       message="Telephone Number"
+                       required="true"
+                       size="30"
+                       class="sizeinput"
+                />
+                <field name="fax" type="text"
+                       filter="string"
+                       label="Fax Number"
+                       message="Fax Number"
+                       size="30"
+                       class="sizeinput"
+                />                
+        </fieldset>
+        <fieldset name="res"
+                  label="Referral Source"
+        >
+                <field name="howdo" type="list"
+                       default="0"
+                       label="How do you know about us?"
+                       class="sizeinputselect"
+                       size="1"
+                >
+                        <option value="0">Plelase Select</option>
+                        <option value="1">Google</option>
+                        <option value="2">Friend recommendation</option>
+                        <option value="3">Facebook</option>
+                        <option value="4">Other(Kindly fill in)</option>
+                </field>    
+                <field name="other_source" type="text"
+                       filter="string"
+                       label="Other source?"
+                       message="Other Source?"
+                       class="sizeinput"
+                       size="30"
+                /> 
+        </fieldset>    
+        <fieldset name="checks"
+                  label="Age Declaration Referral"
+        >
+                      
+                <field name="age_check" type="checkbox"
+                       filter="string"
+                       label="I am 18 years old or older (depending on ther  jurisdiction of your home country or state)"
+                       message=""
+                       size="30"
+                       required="true"
+                       default = "0"
+                /> 
+                <field name="notes" type="spacer" class="text"
+                       label="Security check : Your privacy is important to us, we DO NOT rent, sell or reveal your personal infomation to 3rd parties. To learn more, read our privacy policy page."
+                /> 
+                <field
+                        name="captcha"
+                        type="captcha"
+                        label="COM_USERS_CAPTCHA_LABEL"
+                        validate="captcha"
+                />              
+        </fieldset>
+
+</form>

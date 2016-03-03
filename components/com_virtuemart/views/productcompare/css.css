@@ -1,0 +1,108 @@
+.view_productcompare .main-top {display: none;}
+.view_productcompare #breadcrumb {display: none;}
+.product_compare_wapper {padding: 10px}
+.product_compare_wapper .top {border-top: 1px solid #CCCCCC; padding-top: 10px; color: #92278F;float: left;margin-bottom: 20px;width: 100%;}
+.product_compare_wapper .top .padding {float: right;}
+.product_compare_wapper .top .padding .page {color: #838383; margin: 0px 2px}
+.product_compare_wapper .top .padding .send_friend {margin-right: 15px; cursor: pointer;}
+.product_compare_wapper .top .padding .current{font-weight: bold; color: #92278F}
+.product_compare_wapper .top .padding .next, .product_compare_wapper .top .padding .pre{color: #92278F}
+.product_compare_wapper .top .total{float: left; position: relative;}
+.product_compare_wapper .top .total .main_title{color: #92278F; font-size: 17px; font-weight: bold; margin-right: 20px;}
+.product_compare_wapper .top .total a{color: #92278F; font-weight: bold;text-decoration: underline; margin-right: 30px;}
+.product_compare_wapper .top .total img{position: absolute; left: 233px; top: 6px;}
+
+.product_compare_wapper .compare_content{border: 1px solid #CCCCCC; float: left ;margin-bottom: 20px;}
+.product_compare_wapper .compare_content .compare_items{width: 100%;}
+
+.product_compare_wapper .compare_content .compare_items .title{width: 115px; float: left; }
+.product_compare_wapper .compare_content .compare_items .main_title{color: #92278F; font-weight: bold; padding: 20px 0px 0px 10px;}
+.product_compare_wapper .compare_content .compare_items .sub_title{padding: 10px 0px 0px 10px; font-size: 11px; font-weight: bold; border-top:1px dashed #CCCCCC}
+
+.product_compare_wapper .compare_content .compare_items .compare_product{border-left: 1px solid #CCCCCC; width: 189px; float: left; border-right:1px solid #CCCCCC; margin-right: -1px; border-top: 1px dashed #CCCCCC}
+.product_compare_wapper .compare_content .compare_items .general{border-top: none !important; position: relative;}
+.product_compare_wapper .compare_content .disable_border_top{border-top: none !important;}
+.product_compare_wapper .compare_content hr{margin: 0}
+
+.product_compare_wapper .compare_content .compare_items .compare_product .product_title{color: #92278F; font-weight: bold; padding: 20px 10px 10px 10px; text-align: center;min-height: 15px;}
+.product_compare_wapper .compare_content .compare_items .compare_product .product_title a{color: #92278F; font-weight: bold; padding: 20px 10px 10px 10px; text-align: center;}
+.product_compare_wapper .compare_content .compare_items .compare_product .product_thumb img{width: 185px; height: 150px; }
+.product_compare_wapper .compare_content .compare_items .compare_product .icons{position: absolute; float: left; margin: 4px 0 10px 10px; bottom: 35px}
+.product_compare_wapper .compare_content .compare_items .compare_product .icons a:hover{text-decoration: none;}
+.product_compare_wapper .compare_content .compare_items .compare_product .icon_unwishlist{
+  background:url("../../assets/images/icons_compare.png") no-repeat scroll -228px 0px transparent;
+    height: 35px;
+    left: 10px;
+    position: absolute;
+    width: 35px;
+    cursor: pointer;
+}
+.product_compare_wapper .compare_content .compare_items .compare_product .icon_wishlist{
+  background:url("../../assets/images/icons_compare.png") no-repeat scroll 0px 0px transparent;
+    height: 35px;
+    left: 2px;
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+}
+.product_compare_wapper .compare_content .compare_items .compare_product .icon_uncompare{
+  background:url("../../assets/images/icons_compare.png") no-repeat scroll -73px 0px transparent;
+    height: 35px;
+    left: 42px;
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+}
+.product_compare_wapper .compare_content .compare_items .compare_product .icon_promotion{
+  background:url("../../assets/images/icons_compare.png")no-repeat scroll -111px 0px transparent;
+    height: 35px;
+    left: 84px;
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+}
+.product_compare_wapper .compare_content .compare_items .compare_product .icon_cart{
+  background:url("../../assets/images/icons_compare.png")no-repeat scroll -151px 0px transparent;
+    height: 35px;
+    left: 126px;
+    position: absolute;
+    width: 35px;
+    cursor: pointer;
+}
+
+.product_compare_wapper .compare_content .compare_items .compare_product .icon_rm{
+  background:url("../../assets/images/rm_compare.png")no-repeat transparent;
+  height: 12px;
+  position: absolute;
+  width: 13px;
+  cursor: pointer;
+}
+
+.product_compare_wapper .compare_content .compare_items .compare_product .photo_title{text-align: center; margin: 10px 0px; min-height: 18px; padding-bottom: 10px}
+.product_compare_wapper .compare_content .compare_items .compare_product .insertable_length{text-align: center; margin: 10px 0px;}
+.product_compare_wapper .compare_content .compare_items .compare_product .number_vote{text-align: center; margin: 5px 0px 10px 0px;}
+.product_compare_wapper .compare_content .compare_items .compare_product .star_icon{padding: 20px 10px 0px 45px; }
+.product_compare_wapper .compare_content .compare_items .compare_product .p_features{padding: 20px 0px 10px 0px; min-height: 200px}
+
+
+.compare_product .online_price {color: #B46DB3; font-size: 12px; margin: 5px}
+.compare_product .online_price span{float: right; color: #C22C38}
+.compare_product .multi_price {color:#BF1F2B; margin: 5px; font-weight: bold;}
+
+.compare_product  div.PriceretailPrice{width: 185px; color: #B00C97; position: relative; margin: 10px 5px 4px}
+.compare_product  div.PriceretailPrice span.PriceretailPrice{color: #C01D2E; margin-bottom: 8px;position: absolute; right: 0px}
+.compare_product  div.PricesalesPrice{width: 185px; color: #B00C97;position: relative; margin: 4px}
+.compare_product  div.PricesalesPrice span.PricesalesPrice{color: #C01D2E; position: absolute; right: 0px}
+.compare_product  div.PricememberPrice{width: 185px; color: #C01D2E;position: relative; margin: 5px 4px 10px; font-weight: bold;}
+.compare_product  div.PricememberPrice span.PricememberPrice { position: absolute; right: 0px}
+.compare_product  div.PricememberPrice span.PricememberPrice a{color: #C01D2E;}
+
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated li{list-style: none;}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated ul{margin: 0;}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated .comment_title{color: #92278F; text-align: center; float: left; font-size: 15px;}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated .commnet_author{float: left; margin: 10px 0px; position: relative;}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated .commnet_author .author{color: #B8B9BB; font-size: 11px}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated .commnet_author .author_wapper{float: left; position: absolute; left: 2px}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated .commnet_author .ratingbox10{float: right; margin-left: 100px; margin-top: 2px;}
+.product_compare_wapper .compare_content .compare_items .compare_product .highly_rated .commnet_content{float: left;}
+.product_compare_wapper .unactive{display: none;}

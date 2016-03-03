@@ -1,0 +1,16 @@
+.contentpane{
+font-family: Arial, Helvetica , sans-serif;
+}
+.item-page h3{
+    height: 37px;
+    background: #92278F;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 37px;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.item-page a{
+    color: #92278F;
+}

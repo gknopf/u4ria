@@ -1,0 +1,136 @@
+
+#slidebox {
+    border: 1px solid #CCCCCC;
+    margin: 0 auto;
+    position: relative;
+}
+#slidebox, #slidebox .content {
+    width: 788px;
+}
+#slidebox, #slidebox .container, #slidebox .content {
+    height: 420px;
+    width: 660px;
+}
+#slidebox {
+    overflow: hidden;
+}
+#slidebox .container {
+    left: 0;
+    position: relative;
+}
+#slidebox .content {
+    background: none repeat scroll 0 0 black;
+    float: left;
+}
+#slidebox .content div {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 13px;
+    height: 100%;
+    padding: 0;
+}
+#slidebox .content div h3 {
+    background: none repeat scroll 0 0 #100801;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Basic Sans Light SF',Arial;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 52px;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+#slidebox .content div h3 span {
+    color: #C10EA6;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+#slidebox .content div .footer-title {
+    background: none repeat scroll 0 0 #93057E;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 60px;
+    height: 70px;
+    padding: 7px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+#slidebox .content div .footer-title span {
+    background: none repeat scroll 0 0 #270321;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 21px;
+    height: 60px;
+    line-height: 28px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    width: 350px;
+}
+#slidebox .content div .footer-title p {
+    font-family: Onyx;
+    padding-top: 0;
+	font-size: 55px;
+}
+#slidebox .next, #slidebox .previous {
+    display: block;
+    height: 21px;
+    position: absolute;
+    width: 21px;
+    z-index: 2;
+}
+#slidebox .next {
+    background: url("../images/slidebox_next.png") no-repeat scroll left top transparent;
+    margin-right: 10px;
+    right: 0;
+}
+#slidebox .next:hover {
+    background: url("../images/slidebox_next_hover.png") no-repeat scroll left top transparent;
+}
+#slidebox .previous {
+    background: url("../images/slidebox_previous.png") no-repeat scroll left top transparent;
+    margin-left: 10px;
+}
+#slidebox .previous:hover {
+    background: url("../images/slidebox_previous_hover.png") no-repeat scroll left top transparent;
+}
+#slidebox .thumbs {
+    bottom: 90px;
+    position: absolute;
+    right: 8px;
+    width: auto;
+    z-index: 4;
+}
+#slidebox .thumbs .thumb {
+    background: url("../images/slidebox_thumb.png") repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: bold;
+    height: 18px;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding: 0 6px;
+    text-decoration: none;
+}
+#slidebox .thumbs .thumb:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+#slidebox .selected_thumb {
+    background-color: #AE0D97;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: bold;
+    height: 18px;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding: 0 6px;
+    text-decoration: none;
+}

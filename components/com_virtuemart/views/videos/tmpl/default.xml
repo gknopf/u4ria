@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Video List">
+         <message><![CDATA[Video List]]></message>
+    </layout>
+    <state>
+        <name>Video List</name>
+       		<description><![CDATA[Video List]]></description>
+		 </state>
+</metadata>

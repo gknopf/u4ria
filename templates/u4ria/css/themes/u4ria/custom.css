@@ -1,0 +1,13 @@
+div.vs table{
+    width: 100%;
+}
+
+div.vs td *{margin: 0;padding: 0;}
+div.vs td input#mod_virtuemart_search{width: 100%;}
+div.vs td select{height: 23px;}
+div.vs td{
+    border: 0;
+}
+td.boxText{
+    padding: 0;
+}

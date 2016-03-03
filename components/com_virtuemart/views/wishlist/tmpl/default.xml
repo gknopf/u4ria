@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Wish List">
+         <message><![CDATA[Wish List]]></message>
+    </layout>
+    <state>
+        <name>Wish List</name>
+       		<description><![CDATA[Wish List]]></description>
+		 </state>
+</metadata>

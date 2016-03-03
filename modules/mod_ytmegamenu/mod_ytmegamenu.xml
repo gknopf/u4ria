@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>YT Megamenu</name>
+	<author>YouTech Company</author>
+	<creationDate>24 June 2011</creationDate>
+	<copyright>Copyright (C) 2010 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0</version>
+	<description>YT_EXTENSIONS_DESC</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_ytmegamenu.ini</language>
+		<language tag="en-GB">en-GB.mod_ytmegamenu.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_ytmegamenu">index.html</filename>
+		<filename module="mod_ytmegamenu">mod_ytmegamenu.php</filename>
+		<folder module="mod_ytmegamenu">menusys</folder>
+		<folder module="mod_ytmegamenu">tmpl</folder>
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-size:14px;color:#0D9FC4;&quot;&gt;MODULE OPTIONS&lt;/div&gt;" />
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX_LABEL" description="MODULE_CLASS_SUFFIX_DESC" />
+		<param name="introtext"  type="textarea" rows="4" cols="44" default="" label="INTRO_TEXT_LABEL" description="INTRO_TEXT_DESC" />
+		<param name="footertext" type="textarea" rows="4" cols="44" default="" label="FOOTER_TEXT_LABEL" description="FOOTER_TEXT_DESC" />
+
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-size:14px;color:#0D9FC4;&quot;&gt;MENU OPTIONS&lt;/div&gt;" />
+		<param name="menutype" type="menu" default="mainmenu" label="MENUTYPE_LABEL" description="MENUTYPE_DESC" />
+		<param name="menustyle" type="list" default="mega" label="MENU_STYLE_LABEL" description="MENU_STYLE_DESC">
+			<option value="vmega">Mega Menu - Vertical</option>
+			<option value="basic">CSS Menu - Horizontal</option>
+		  	<option value="moo">Moo Menu - Horizontal</option>
+		  	<option value="mega">Mega Menu - Horizontal</option>
+		  	<option value="dropline">Dropline Menu - Horizontal</option>
+		</param>
+		
+		<param name="moofx" type="list" default="Fx.Transitions.linear" label="MENU_EFFECT_LABEL" description="MENU_EFFECT_DESC">
+			<option value="Fx.Transitions.Circ.easeOut">Fx.Transitions.Circ.easeOut</option>
+			<option value="Fx.Transitions.Circ.easeIn">Fx.Transitions.Circ.easeIn</option>
+			<option value="Fx.Transitions.Circ.easeInOut">Fx.Transitions.Circ.easeInOut</option>
+			<option value="Fx.Transitions.linear">Fx.Transitions.linear</option>
+			<option value="Fx.Transitions.Quad.easeInOut">Fx.Transitions.Quad.easeInOut</option>
+			<option value="Fx.Transitions.Quad.easeOut">Fx.Transitions.Quad.easeOut</option>
+			<option value="Fx.Transitions.Quad.easeIn">Fx.Transitions.Quad.easeIn</option>
+			
+			<option value="Fx.Transitions.Cubic.easeIn">Fx.Transitions.Cubic.easeIn</option>
+			<option value="Fx.Transitions.Cubic.easeOut">Fx.Transitions.Cubic.easeOut</option>
+			<option value="Fx.Transitions.Cubic.easeInOut">Fx.Transitions.Cubic.easeInOut</option>
+			<option value="Fx.Transitions.Quart.easeIn">Fx.Transitions.Quart.easeIn</option>
+			<option value="Fx.Transitions.Quart.easeOut">Fx.Transitions.Quart.easeOut</option>
+			<option value="Fx.Transitions.Quart.easeInOut">Fx.Transitions.Quart.easeInOut</option>
+			
+			<option value="Fx.Transitions.Quint.easeIn">Fx.Transitions.Quint.easeIn</option>
+			<option value="Fx.Transitions.Quint.easeOut">Fx.Transitions.Quint.easeOut</option>
+			<option value="Fx.Transitions.Quint.easeInOut">Fx.Transitions.Quint.easeInOut</option>
+			<option value="Fx.Transitions.Sine.easeIn">Fx.Transitions.Sine.easeIn</option>
+			<option value="Fx.Transitions.Sine.easeOut">Fx.Transitions.Sine.easeOut</option>
+			<option value="Fx.Transitions.Sine.easeInOut">Fx.Transitions.Sine.easeInOut</option>
+			
+			<option value="Fx.Transitions.Expo.easeIn">Fx.Transitions.Expo.easeIn</option>
+			<option value="Fx.Transitions.Expo.easeOut">Fx.Transitions.Expo.easeOut</option>
+			<option value="Fx.Transitions.Expo.easeInOut">Fx.Transitions.Expo.easeInOut</option>
+			<option value="Fx.Transitions.Bounce.easeIn">Fx.Transitions.Bounce.easeIn</option>
+			<option value="Fx.Transitions.Bounce.easeOut">Fx.Transitions.Bounce.easeOut</option>
+			<option value="Fx.Transitions.Bounce.easeInOut">Fx.Transitions.Bounce.easeInOut</option>
+			
+			<option value="Fx.Transitions.Back.easeIn">Fx.Transitions.Back.easeIn</option>
+			<option value="Fx.Transitions.Back.easeOut">Fx.Transitions.Back.easeOut</option>
+			<option value="Fx.Transitions.Back.easeInOut">Fx.Transitions.Back.easeInOut</option>
+			<option value="Fx.Transitions.Elastic.easeIn">Fx.Transitions.Elastic.easeIn</option>
+			<option value="Fx.Transitions.Elastic.easeOut">Fx.Transitions.Elastic.easeOut</option>
+			<option value="Fx.Transitions.Elastic.easeInOut">Fx.Transitions.Elastic.easeInOut</option>		  	
+		</param>
+		<param name="activeslider" type="radio" default="0" label="LAVALAMP_EFFECT_LABEL" description="LAVALAMP_EFFECT_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="moofxduration" type="text" default="500" label="EFFECT_DURATION_LABEL" description="EFFECT_DURATION_DESC" />
+		<param name="startlevel" type="text" default="0" label="START_LEVEL_LABEL" description="START_LEVEL_DESC" />
+		<param name="endlevel" type="text" default="-1" label="END_LEVEL_LABEL" description="END_LEVEL_DESC" />
+				
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-size:14px;color:#0D9FC4;&quot;&gt;DROPLINE MENU OPTIONS&lt;/div&gt;" />
+		<param name="jsdropline" type="radio" default="0" label="SMOOTH_DROPLINE_MENU_LABEL" description="SMOOTH_DROPLINE_MENU_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="droplinewidth" type="text" default="1023" label="DROPLINE_WIDTH_LABEL" description="DROPLINE_WIDTH_DESC" />
+		<param name="droplineheight" type="text" default="33" label="DROPLINE_HEIGHT_LABEL" description="DROPLINE_HEIGHT_DESC" />
+		<param name="droplinewrapper" type="radio" default="0" label="DROPLINE_WRAPPER_LABEL" description="DROPLINE_WRAPPER_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="CACHING_LABEL" description="CACHING_DESC">
+			<option value="0">No caching</option>
+			<option value="1">Use global</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="CACHE_TIME_LABEL" description="CACHE_TIME_DESC" />
+		<param name="debug" type="hidden" default="0" label="Debug Mode" description="For Developer" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="@spacer" type="spacer" label="&lt;div style=&quot;font-size:14px;color:#0D9FC4;&quot;&gt;MODULE OPTIONS&lt;/div&gt;" />
+				<field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX_LABEL" description="MODULE_CLASS_SUFFIX_DESC"  />
+				<field name="introtext"  type="textarea" rows="4" cols="44" default="" label="INTRO_TEXT_LABEL" description="INTRO_TEXT_DESC" filter="safehtml" />
+				<field name="footertext" type="textarea" rows="4" cols="44" default="" label="FOOTER_TEXT_LABEL" description="FOOTER_TEXT_DESC" filter="safehtml"/>
+
+				<field name="@spacer" type="spacer" label="&lt;div style=&quot;font-size:14px;color:#0D9FC4;&quot;&gt;MENU OPTIONS&lt;/div&gt;" />
+				<field name="menutype" type="menu" default="mainmenu" label="MENUTYPE_LABEL" description="MENUTYPE_DESC" />
+				<field name="menustyle" type="list" default="mega" label="MENU_STYLE_LABEL" description="MENU_STYLE_DESC">
+					<option value="vmega">Mega Menu - Vertical</option>
+					<option value="basic">CSS Menu - Horizontal</option>
+				  	<option value="moo">Moo Menu - Horizontal</option>
+				  	<option value="mega">Mega Menu - Horizontal</option>
+				  	<option value="dropline">Dropline Menu - Horizontal</option>
+				</field>
+				
+				<field name="moofx" type="list" default="Fx.Transitions.linear" label="MENU_EFFECT_LABEL" description="MENU_EFFECT_DESC">
+					<option value="Fx.Transitions.Circ.easeOut">Fx.Transitions.Circ.easeOut</option>
+					<option value="Fx.Transitions.Circ.easeIn">Fx.Transitions.Circ.easeIn</option>
+					<option value="Fx.Transitions.Circ.easeInOut">Fx.Transitions.Circ.easeInOut</option>
+					<option value="Fx.Transitions.linear">Fx.Transitions.linear</option>
+					<option value="Fx.Transitions.Quad.easeInOut">Fx.Transitions.Quad.easeInOut</option>
+					<option value="Fx.Transitions.Quad.easeOut">Fx.Transitions.Quad.easeOut</option>
+					<option value="Fx.Transitions.Quad.easeIn">Fx.Transitions.Quad.easeIn</option>
+					
+					<option value="Fx.Transitions.Cubic.easeIn">Fx.Transitions.Cubic.easeIn</option>
+					<option value="Fx.Transitions.Cubic.easeOut">Fx.Transitions.Cubic.easeOut</option>
+					<option value="Fx.Transitions.Cubic.easeInOut">Fx.Transitions.Cubic.easeInOut</option>
+					<option value="Fx.Transitions.Quart.easeIn">Fx.Transitions.Quart.easeIn</option>
+					<option value="Fx.Transitions.Quart.easeOut">Fx.Transitions.Quart.easeOut</option>
+					<option value="Fx.Transitions.Quart.easeInOut">Fx.Transitions.Quart.easeInOut</option>
+					
+					<option value="Fx.Transitions.Quint.easeIn">Fx.Transitions.Quint.easeIn</option>
+					<option value="Fx.Transitions.Quint.easeOut">Fx.Transitions.Quint.easeOut</option>
+					<option value="Fx.Transitions.Quint.easeInOut">Fx.Transitions.Quint.easeInOut</option>
+					<option value="Fx.Transitions.Sine.easeIn">Fx.Transitions.Sine.easeIn</option>
+					<option value="Fx.Transitions.Sine.easeOut">Fx.Transitions.Sine.easeOut</option>
+					<option value="Fx.Transitions.Sine.easeInOut">Fx.Transitions.Sine.easeInOut</option>
+					
+					<option value="Fx.Transitions.Expo.easeIn">Fx.Transitions.Expo.easeIn</option>
+					<option value="Fx.Transitions.Expo.easeOut">Fx.Transitions.Expo.easeOut</option>
+					<option value="Fx.Transitions.Expo.easeInOut">Fx.Transitions.Expo.easeInOut</option>
+					<option value="Fx.Transitions.Bounce.easeIn">Fx.Transitions.Bounce.easeIn</option>
+					<option value="Fx.Transitions.Bounce.easeOut">Fx.Transitions.Bounce.easeOut</option>
+					<option value="Fx.Transitions.Bounce.easeInOut">Fx.Transitions.Bounce.easeInOut</option>
+					
+					<option value="Fx.Transitions.Back.easeIn">Fx.Transitions.Back.easeIn</option>
+					<option value="Fx.Transitions.Back.easeOut">Fx.Transitions.Back.easeOut</option>
+					<option value="Fx.Transitions.Back.easeInOut">Fx.Transitions.Back.easeInOut</option>
+					<option value="Fx.Transitions.Elastic.easeIn">Fx.Transitions.Elastic.easeIn</option>
+					<option value="Fx.Transitions.Elastic.easeOut">Fx.Transitions.Elastic.easeOut</option>
+					<option value="Fx.Transitions.Elastic.easeInOut">Fx.Transitions.Elastic.easeInOut</option>		  	
+				</field>
+				<field name="activeslider" type="radio" default="0" label="LAVALAMP_EFFECT_LABEL" description="LAVALAMP_EFFECT_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+								
+				<field name="moofxduration" type="text" default="500" label="EFFECT_DURATION_LABEL" description="EFFECT_DURATION_DESC" />
+				<field name="startlevel" type="text" default="0" label="START_LEVEL_LABEL" description="START_LEVEL_DESC" />
+				<field name="endlevel" type="text" default="-1" label="END_LEVEL_LABEL" description="END_LEVEL_DESC" />
+								
+				<field type="spacer" label="&lt;div style=&quot;font-size:14px;color:#0D9FC4;&quot;&gt;DROPLINE MENU OPTIONS&lt;/div&gt;" />
+				<field name="jsdropline" type="radio" default="0" label="SMOOTH_DROPLINE_MENU_LABEL" description="SMOOTH_DROPLINE_MENU_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="droplinewidth" type="text" default="1023" label="DROPLINE_WIDTH_LABEL" description="DROPLINE_WIDTH_DESC" />
+				<field name="droplineheight" type="text" default="33" label="DROPLINE_HEIGHT_LABEL" description="DROPLINE_HEIGHT_DESC" />
+				<field name="droplinewrapper" type="radio" default="0" label="DROPLINE_WRAPPER_LABEL" description="DROPLINE_WRAPPER_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+				<field name="debug" type="hidden" default="false" label="Debug Mode" description="For Developer" />
+			</fieldset>		
+		</fields>
+	</config>	
+</install>

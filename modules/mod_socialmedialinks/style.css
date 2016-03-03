@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* Social Media Wizard */
+div.smile a {display:inline-block;width:auto;outline:none;}
+div.smile a img {margin:3px;border:none;padding:0px;}
+div.smile a:hover {background:none;}
+div.smilecredits {width:100%}
+div.smilecredits a {font-size:10px;}
+.clr {clear:both;}
+	

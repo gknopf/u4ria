@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+        <name>settemplate</name>
+        <author>datnb</author>
+        <creationDate>September 2013</creationDate>
+        <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+        <authorEmail>nguyendat.vn@gmail.com</authorEmail>
+        <authorUrl>www.joomla.org</authorUrl>
+        <version>2.5.0</version>
+        <description>Select Mobile Template</description>
+        <files>
+                <filename plugin="settemplate">settemplate.php</filename>
+        </files>
+                <config>
+                <fields name="params">		
+                        <fieldset name="basic">						
+                                <field name="styleTemplate" type="templatestyle" default="" label="Template Style" />				
+                        </fieldset>
+                </fields>
+        </config>                	
+</extension>

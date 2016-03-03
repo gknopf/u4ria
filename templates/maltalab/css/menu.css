@@ -1,0 +1,13 @@
+/** TOP MENU **/
+#topmenu ul.menu{list-style: none;margin: 0 0;padding: 0 0;}
+#topmenu ul.menu li{list-style: none;margin: 0 10px 0 0;padding: 0 0;display: inline-table;}
+#topmenu ul.menu li a:link, #topmenu ul.menu li a:visited{color: #FFF;text-decoration: none;}
+#topmenu ul.menu li a:hover {color: red;}
+/** END TOP MENU **/
+
+/** FOOTER MENU **/
+#footer .footer_bottom ul.menu{list-style: none;margin: 0 0;padding: 0 0;text-align: center;}
+#footer .footer_bottom ul.menu li{list-style: none;margin: 0 5px;padding: 0 0;display: inline-table;}
+#footer .footer_bottom ul.menu li a:link, #footer ul.menu li a:visited{color: #FFF; text-decoration: none;}
+#footer .footer_bottom ul.menu li a:hover {color: blue;}
+/** END FOOTER MENU **/
